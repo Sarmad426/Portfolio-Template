@@ -5,7 +5,7 @@ export const metadata = {
 }
 export default function Home() {
   return (
-    <main>
+    <main className="bg-black text-white">
       <Protfolio />
     </main>
   )
