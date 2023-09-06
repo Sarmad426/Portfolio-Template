@@ -27,7 +27,7 @@ export const contact = {
 };
 export const protfolioLinks = {
   github: "https://github.com/sarmad426",
-  facebook: "https://www.facebook.com/profile.php?id=100083350142289",
+  facebook: "https://web.facebook.com/sarmad.rafique.9",
   linkedin: "https://www.linkedin.com/in/sarmad-rafique-62518a22b",
   twitter: "https://twitter.com/SarmadRafique2",
   ecommerceApp: "https://progressivesite.netlify.app",
