@@ -1,4 +1,4 @@
-import sarmadImage from "./my image.jpeg";
+import sarmadImage from "./protfolio-img.jpg";
 export const personalData = {
   name: "Muhammad Sarmad",
   fatherName: "Muhammad Rafique",
@@ -11,12 +11,10 @@ export const skills = [
   "HTML",
   "CSS",
   "Javascript/Typescript",
-  "Bootstrap",
   "Tailwind Css",
   "React",
   "Next js",
   "Python",
-  "Django",
   "SQL",
   "Git",
   "Figma",
@@ -27,7 +25,6 @@ export const contact = {
 };
 export const protfolioLinks = {
   github: "https://github.com/sarmad426",
-  facebook: "https://web.facebook.com/sarmad.rafique.9",
   linkedin: "https://www.linkedin.com/in/sarmad-rafique-62518a22b",
   twitter: "https://twitter.com/SarmadRafique2",
   ecommerceApp: "https://progressivesite.netlify.app",
