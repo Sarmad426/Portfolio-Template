@@ -5,7 +5,7 @@ export const metadata = {
 };
 export default function Home() {
   return (
-    <main className="bg-black text-white">
+    <main className="flex items-center justify-center">
       <Protfolio />
     </main>
   );
