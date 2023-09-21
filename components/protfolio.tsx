@@ -17,9 +17,9 @@ const Protfolio: FC = () => {
           width={300}
           height={250}
           alt="Sarmad Image"
-          className="rounded-[100rem] h-[22rem] w-[26rem] md:m-auto"
+          className="rounded-full object-cover h-[30rem] w-[35rem] md:m-auto"
         />
-        <h2 className="font-bold text-2xl text-orange-500 tracking-wider my-3">
+        <h2 className="font-semibold text-7xl text-orange-500 tracking-wider my-3">
           Sarmad Rafique
         </h2>
       </section>
@@ -114,9 +114,13 @@ const Protfolio: FC = () => {
             Contact
           </h2>
           <span className="text-base font-medium underline">Phone:</span>
-          <p className="font-semibold ml-12 my-1 tracking-wider">{contact.phone}</p>
+          <p className="font-semibold ml-12 my-1 tracking-wider">
+            {contact.phone}
+          </p>
           <span className="text-base font-medium underline">Email:</span>
-          <p className="font-semibold ml-12 my-2 text-blue-500 underline cursor-pointer">{contact.email}</p>
+          <p className="font-semibold ml-12 my-2 text-blue-500 underline cursor-pointer">
+            {contact.email}
+          </p>
         </div>
       </section>
     </div>
