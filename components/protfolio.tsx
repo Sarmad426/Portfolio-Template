@@ -1,130 +1,90 @@
-import { FC } from "react";
+"use client";
 import Image from "next/image";
-import {
-  personalData,
-  contact,
-  education,
-  protfolioLinks,
-  skills,
-} from "./data";
-
-const Protfolio: FC = () => {
+import { skills, personalData, bio, education, projects } from "./data";
+import { BiArrowFromLeft } from "react-icons/bi";
+const TypingAnimation = () => {
   return (
-    <div className="mx-5 my-5 lg:grid lg:grid-cols-2 lg:gap-12">
-      <section className="text-center m-auto mt-[3rem]">
-        <Image
-          src={personalData.image}
-          width={300}
-          height={250}
-          alt="Sarmad Image"
-          className="rounded-full object-cover h-[30rem] w-[35rem] md:m-auto"
-        />
-        <h2 className="font-semibold text-7xl text-orange-500 tracking-wider my-3">
-          Sarmad Rafique
-        </h2>
-      </section>
-      <section className="w-full mt-[3rem]">
-        <div>
-          <span className="text-base font-medium underline">Father Name:</span>
-          <p className="font-semibold ml-12 my-1">{personalData.fatherName}</p>
-          <span className="text-base font-medium underline">Age:</span>
-          <p className="font-semibold ml-12 my-1">{personalData.age}</p>
-          <span className="text-base font-semibold underline">About Me:</span>
-          <p className="my-2">{personalData.description}</p>
-        </div>
-      </section>
-      <section className="mt-5 mb-2">
-        <div>
-          <h2 className="font-bold text-3xl tracking-wide text-center text-orange-500">
-            Education
-          </h2>
-          <div className="my-3 text-xl font-semibold underline">Matric:</div>
-          <span>{education.matric}</span>
-          <div className="my-3 text-xl font-semibold underline">
-            Intermediate:
-          </div>
-          <span>{education.intermediate}</span>
-          <div className="my-3 text-xl font-semibold underline">Others:</div>
-          <span>{education.bachelors}</span>
-        </div>
-      </section>
-      <section className="mt-5 mb-2">
-        <div>
-          <h2 className="font-bold text-3xl tracking-wide text-center text-orange-500">
-            Skills
-          </h2>
-          <ul className="grid grid-cols-2 gap-12 my-3">
-            {skills.map((skill, index) => {
+    <div className="h-screen w-screen text-black">
+      <div className="flex items-start space-x-12 m-8 mt-12">
+        <div className="lg:w-2/5 md:w-[80%] w-3/4">
+          <div>
+            {personalData.map((data) => {
               return (
-                <li key={index} className="mx-6 font-semibold">
-                  {skill}
-                </li>
+                <div key={data.name}>
+                  <Image
+                    src={data.image}
+                    alt={`${data.name}, "Image"`}
+                    className="object-cover rounded-full lg:w-4/5"
+                  />
+                  <h3 className="text-4xl font-medium">{data.name}</h3>
+                  <p>
+                    Age: <span className="font-medium">{data.age}</span>
+                  </p>
+                </div>
               );
             })}
-          </ul>
-        </div>
-      </section>
-      <section className="mt-5 mb-2">
-        <div>
-          <h2 className="font-bold text-3xl tracking-wide text-center text-orange-500">
-            Links
-          </h2>
-          <div className="grid grid-cols-2 gap-6">
-            <a
-              href={protfolioLinks.github}
-              className="text-blue-500 font-semibold underline"
-              target="_blank"
-            >
-              Github
-            </a>
-            <a
-              href={protfolioLinks.facebook}
-              className="text-blue-500 font-semibold underline"
-              target="_blank"
-            >
-              Facebook
-            </a>
-            <a
-              href={protfolioLinks.twitter}
-              className="text-blue-500 font-semibold underline"
-              target="_blank"
-            >
-              Twitter
-            </a>
-            <a
-              href={protfolioLinks.linkedin}
-              className="text-blue-500 font-semibold underline"
-              target="_blank"
-            >
-              Linkedin
-            </a>
-            <a
-              href={protfolioLinks.ecommerceApp}
-              className="text-blue-500 font-semibold underline"
-              target="_blank"
-            >
-              Ecommerece App built with react
-            </a>
           </div>
         </div>
-      </section>
-      <section className="mt-5 mb-2">
-        <div>
-          <h2 className="font-bold text-3xl tracking-wide text-center text-orange-500">
-            Contact
-          </h2>
-          <span className="text-base font-medium underline">Phone:</span>
-          <p className="font-semibold ml-12 my-1 tracking-wider">
-            {contact.phone}
-          </p>
-          <span className="text-base font-medium underline">Email:</span>
-          <p className="font-semibold ml-12 my-2 text-blue-500 underline cursor-pointer">
-            {contact.email}
-          </p>
+        <div className="w-2/5">
+          <div>
+            {bio.map((data) => {
+              return (
+                <div key={data.role}>
+                  <h1 className="text-6xl font-medium text-orange-500">
+                    {data.role}
+                  </h1>
+                  <p className="text-gray-700 text-lg my-8">{data.bio}</p>
+                </div>
+              );
+            })}
+          </div>
+          <div className="my-4">
+            <h2 className="text-4xl font-semibold font-[Arial]">Skills</h2>
+            <ul className="flex items-start flex-wrap gap-x-4">
+              {skills.map((skill) => {
+                return (
+                  <li
+                    key={skill.name}
+                    className="shadow-md px-5 py-4 text-base flex my-4 rounded-md gap-x-3"
+                  >
+                    <span>{skill.logo}</span>
+                    <p>{skill.name}</p>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
-      </section>
+      </div>
+      <div className="my-4 lg:flex items-center justify-evenly space-x-8 mx-12">
+        <div>
+          <h2 className="text-4xl font-semibold font-[Arial]">Education</h2>
+          <div className="flex my-4">
+            {education.logo}
+            <p className="mx-2 text-base text-gray-700">
+              {education.bachelors}
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2 className="text-4xl font-semibold font-[Arial]">Projects</h2>
+          <div className="flex items-start space-x-8 my-6">
+            {projects.map((project) => {
+              return (
+                <div
+                  key={project.url}
+                  className="shadow-md px-4 py-3 rounded-md my-4 flex item-center gap-x-5 cursor-pointer"
+                >
+                  <h3 className="text-lg font-semibold">{project.name}</h3>
+                  <BiArrowFromLeft />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Protfolio;
+export default TypingAnimation;
