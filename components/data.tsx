@@ -23,7 +23,7 @@ type skillObj = {
   name: string;
 };
 
-type projectObj = {
+export type projectObj = {
   name: string;
   description: string;
   url: string;
