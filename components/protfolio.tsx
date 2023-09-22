@@ -22,9 +22,9 @@ const Protfolio = () => {
   return (
     <div className="h-screen w-screen text-black">
       {/* Home */}
-      <div className="flex items-start space-x-12 m-8 mt-12">
+      <div className="lg:flex lg:flex-row lg:items-start md:items-center md:justify-center md:flex md:flex-col sm:flex sm:flex-col sm:justify-center sm:items-center justify-center items-center space-x-12 m-8 mt-12">
         {/* Personal Details */}
-        <div className="lg:w-2/5 md:w-[80%] w-3/4">
+        <div className="lg:w-2/5 md:w-[80%] sm:w-3/4 w-full">
           <div>
             {personalData.map((data) => {
               return (
@@ -32,9 +32,11 @@ const Protfolio = () => {
                   <Image
                     src={data.image}
                     alt={`${data.name}, "Image"`}
-                    className="object-cover rounded-full lg:w-4/5"
+                    className="object-cover rounded-full lg:w-4/5 md:w-3/4 flex-shrink-0 w-screen"
                   />
-                  <h3 className="text-4xl font-medium">{data.name}</h3>
+                  <h3 className="md:text-4xl text-2xl font-medium">
+                    {data.name}
+                  </h3>
                   <p>
                     Age: <span className="font-medium">{data.age}</span>
                   </p>
@@ -43,7 +45,7 @@ const Protfolio = () => {
             })}
           </div>
         </div>
-        <div className="w-2/5">
+        <div className="lg:w-2/5 md:w-3/5 sm:w-4/5 w-full">
           {/* Bio */}
           <div>
             {bio.map((data) => {
@@ -65,7 +67,7 @@ const Protfolio = () => {
                 return (
                   <li
                     key={skill.name}
-                    className="shadow-md px-5 py-4 text-base flex my-4 rounded-md gap-x-3"
+                    className="shadow-md px-2 md:px-3 lg:px-5 py-4 text-base flex my-4 rounded-md gap-x-3"
                   >
                     <span>{skill.logo}</span>
                     <p>{skill.name}</p>
@@ -76,9 +78,9 @@ const Protfolio = () => {
           </div>
         </div>
       </div>
-      <div className="my-4 lg:flex items-center justify-evenly space-x-8 mx-12">
+      <div className="my-4 flex flex-col lg:flex-row items-center justify-between space-x-8 mx-2 lg:mx-12 w-full">
         {/* Education */}
-        <div>
+        <div className="mb-6 lg:mb-0">
           <h2 className="text-4xl font-semibold font-[system-ui]">Education</h2>
           <div className="flex my-4">
             <span className="w-6 h-6 shrink-0">{education.logo}</span>
@@ -88,18 +90,18 @@ const Protfolio = () => {
           </div>
         </div>
         {/* Projects */}
-        <div>
+        <div className="mb-6 lg:mb-0">
           <h2 className="text-4xl font-semibold font-[system-ui]">Projects</h2>
-          <div className="flex items-start space-x-8 my-6">
+          <div className="flex items-center justify-start space-x-5 flex-wrap">
             {projects.map((project, id) => {
               return (
                 <div
                   key={project.url}
-                  className="shadow-md px-4 py-3 rounded-md my-4 cursor-pointer"
+                  className="lg:flex lg:flex-col shadow-md rounded-md my-4 cursor-pointer min-w-[17rem] max-w-[17.2rem]"
                 >
                   <div
                     onClick={() => openModal(id)}
-                    className="flex item-center gap-x-5"
+                    className="flex item-center gap-x-5 px-4 py-3"
                   >
                     <h3 className="text-lg font-semibold">{project.name}</h3>
                     <BiArrowFromLeft className="w-6 h-7 shrink-0" />
@@ -111,7 +113,8 @@ const Protfolio = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-evenly my-8">
+
+      <div className="flex items-center justify-evenly my-8 flex-wrap">
         <div className="my-4">
           <h2 className="text-4xl font-semibold font-[system-ui]">Contact</h2>
           <div className="flex items-start flex-wrap gap-x-4 my-6">
