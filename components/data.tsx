@@ -15,6 +15,7 @@ import {
   SiX,
 } from "react-icons/si";
 import { FaGraduationCap } from "react-icons/fa";
+import { BiMailSend } from "react-icons/bi";
 import sarmadImage from "./Profile photo.jpg";
 
 type skillObj = {
@@ -94,20 +95,21 @@ export const skills: skillObj[] = [
 ];
 export const contact = {
   email: "sarmadrafique040@gmail.com",
+  logo: <BiMailSend />,
 };
 export const protfolioLinks: profileLinks[] = [
   {
-    name: "Gihub",
+    name: "Github",
     logo: <SiGithub />,
     url: "https://github.com/sarmad426",
   },
   {
-    name: "Linkedin",
+    name: "LinkedIn",
     logo: <SiLinkedin />,
     url: "https://www.linkedin.com/in/sarmad-rafique-62518a22b",
   },
   {
-    name: "X",
+    name: "X - (Twitter)",
     logo: <SiX />,
     url: "https://twitter.com/SarmadRafique2",
   },
