@@ -1,8 +1,26 @@
 "use client";
 import Image from "next/image";
-import { skills, personalData, bio, education, projects } from "./data";
+import {
+  skills,
+  personalData,
+  bio,
+  education,
+  projects,
+  contact,
+  protfolioLinks,
+} from "./data";
 import { BiArrowFromLeft } from "react-icons/bi";
+import Modal from "./modal";
 const TypingAnimation = () => {
+  const openModal = () => {
+    const modal = document.getElementById("modal");
+    if (modal) {
+      //@ts-ignore
+      modal.open();
+      console.log("Modal");
+    }
+    console.log("Modal");
+  };
   return (
     <div className="h-screen w-screen text-black">
       <div className="flex items-start space-x-12 m-8 mt-12">
@@ -46,6 +64,7 @@ const TypingAnimation = () => {
                   <li
                     key={skill.name}
                     className="shadow-md px-5 py-4 text-base flex my-4 rounded-md gap-x-3"
+                    onClick={openModal}
                   >
                     <span>{skill.logo}</span>
                     <p>{skill.name}</p>
@@ -83,6 +102,36 @@ const TypingAnimation = () => {
           </div>
         </div>
       </div>
+      <div className="flex items-center justify-evenly my-8">
+        <div className="my-4">
+          <h2 className="text-4xl font-semibold font-[Arial]">Contact</h2>
+          <div className="flex items-start flex-wrap gap-x-4 my-6">
+            <span>{contact.logo}</span>
+            <p className="text-blue-400 underline cursor-pointer">
+              {contact.email}
+            </p>
+          </div>
+        </div>
+        <div className="my-4">
+          <h2 className="text-4xl font-semibold font-[Arial]">Links</h2>
+          <ul className="flex items-start flex-wrap gap-x-4">
+            {protfolioLinks.map((link) => {
+              return (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  className="shadow-md px-5 py-4 text-base flex my-4 rounded-md gap-x-3"
+                >
+                  <span>{link.logo}</span>
+                  <p>{link.name}</p>
+                </a>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+      <Modal />
     </div>
   );
 };
