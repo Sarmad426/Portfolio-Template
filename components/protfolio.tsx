@@ -59,7 +59,7 @@ const Protfolio = () => {
               );
             })}
           </div>
-          <div className="my-4">
+          <div className="my-4" id="skills">
             <h2 className="text-4xl font-semibold font-[system-ui]">Skills</h2>
             <ul className="flex items-start flex-wrap gap-x-4">
               {/* Skills */}
@@ -80,7 +80,7 @@ const Protfolio = () => {
       </div>
       <div className="my-4 flex flex-col lg:flex-row items-center justify-between space-x-8 mx-2 lg:mx-12 w-full">
         {/* Education */}
-        <div className="mb-6 lg:mb-0">
+        <div className="mb-6 lg:mb-0" id="education">
           <h2 className="text-4xl font-semibold font-[system-ui]">Education</h2>
           <div className="flex my-4">
             <span className="w-6 h-6 shrink-0">{education.logo}</span>
@@ -90,7 +90,7 @@ const Protfolio = () => {
           </div>
         </div>
         {/* Projects */}
-        <div className="mb-6 lg:mb-0">
+        <div className="mb-6 lg:mb-0" id="projects">
           <h2 className="text-4xl font-semibold font-[system-ui]">Projects</h2>
           <div className="flex items-center justify-start space-x-5 flex-wrap">
             {projects.map((project, id) => {
@@ -115,7 +115,7 @@ const Protfolio = () => {
       </div>
 
       <div className="flex items-center justify-evenly my-8 flex-wrap">
-        <div className="my-4">
+        <div className="my-4" id="contact">
           <h2 className="text-4xl font-semibold font-[system-ui]">Contact</h2>
           <div className="flex items-start flex-wrap gap-x-4 my-6">
             <span>{contact.logo}</span>
@@ -124,7 +124,7 @@ const Protfolio = () => {
             </p>
           </div>
         </div>
-        <div className="my-4">
+        <div className="my-4" id="links">
           <h2 className="text-4xl font-semibold font-[system-ui]">Links</h2>
           <ul className="flex items-start flex-wrap gap-x-4">
             {protfolioLinks.map((link) => {
