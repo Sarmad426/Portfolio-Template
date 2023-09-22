@@ -11,19 +11,19 @@ import {
 } from "./data";
 import { BiArrowFromLeft } from "react-icons/bi";
 import Modal from "./modal";
-const TypingAnimation = () => {
-  const openModal = () => {
-    const modal = document.getElementById("modal");
+const Protfolio = () => {
+  const openModal = (id: number) => {
+    const modal = document.getElementById(`${id}`);
     if (modal) {
       //@ts-ignore
-      modal.open();
-      console.log("Modal");
+      modal.showModal();
     }
-    console.log("Modal");
   };
   return (
     <div className="h-screen w-screen text-black">
+      {/* Home */}
       <div className="flex items-start space-x-12 m-8 mt-12">
+        {/* Personal Details */}
         <div className="lg:w-2/5 md:w-[80%] w-3/4">
           <div>
             {personalData.map((data) => {
@@ -44,6 +44,7 @@ const TypingAnimation = () => {
           </div>
         </div>
         <div className="w-2/5">
+          {/* Bio */}
           <div>
             {bio.map((data) => {
               return (
@@ -57,14 +58,14 @@ const TypingAnimation = () => {
             })}
           </div>
           <div className="my-4">
-            <h2 className="text-4xl font-semibold font-[Arial]">Skills</h2>
+            <h2 className="text-4xl font-semibold font-[system-ui]">Skills</h2>
             <ul className="flex items-start flex-wrap gap-x-4">
+              {/* Skills */}
               {skills.map((skill) => {
                 return (
                   <li
                     key={skill.name}
                     className="shadow-md px-5 py-4 text-base flex my-4 rounded-md gap-x-3"
-                    onClick={openModal}
                   >
                     <span>{skill.logo}</span>
                     <p>{skill.name}</p>
@@ -76,26 +77,34 @@ const TypingAnimation = () => {
         </div>
       </div>
       <div className="my-4 lg:flex items-center justify-evenly space-x-8 mx-12">
+        {/* Education */}
         <div>
-          <h2 className="text-4xl font-semibold font-[Arial]">Education</h2>
+          <h2 className="text-4xl font-semibold font-[system-ui]">Education</h2>
           <div className="flex my-4">
-            {education.logo}
+            <span className="w-6 h-6 shrink-0">{education.logo}</span>
             <p className="mx-2 text-base text-gray-700">
               {education.bachelors}
             </p>
           </div>
         </div>
+        {/* Projects */}
         <div>
-          <h2 className="text-4xl font-semibold font-[Arial]">Projects</h2>
+          <h2 className="text-4xl font-semibold font-[system-ui]">Projects</h2>
           <div className="flex items-start space-x-8 my-6">
-            {projects.map((project) => {
+            {projects.map((project, id) => {
               return (
                 <div
                   key={project.url}
-                  className="shadow-md px-4 py-3 rounded-md my-4 flex item-center gap-x-5 cursor-pointer"
+                  className="shadow-md px-4 py-3 rounded-md my-4 cursor-pointer"
                 >
-                  <h3 className="text-lg font-semibold">{project.name}</h3>
-                  <BiArrowFromLeft />
+                  <div
+                    onClick={() => openModal(id)}
+                    className="flex item-center gap-x-5"
+                  >
+                    <h3 className="text-lg font-semibold">{project.name}</h3>
+                    <BiArrowFromLeft className="w-6 h-7 shrink-0" />
+                  </div>
+                  <Modal projectData={project} id={id} />
                 </div>
               );
             })}
@@ -104,7 +113,7 @@ const TypingAnimation = () => {
       </div>
       <div className="flex items-center justify-evenly my-8">
         <div className="my-4">
-          <h2 className="text-4xl font-semibold font-[Arial]">Contact</h2>
+          <h2 className="text-4xl font-semibold font-[system-ui]">Contact</h2>
           <div className="flex items-start flex-wrap gap-x-4 my-6">
             <span>{contact.logo}</span>
             <p className="text-blue-400 underline cursor-pointer">
@@ -113,7 +122,7 @@ const TypingAnimation = () => {
           </div>
         </div>
         <div className="my-4">
-          <h2 className="text-4xl font-semibold font-[Arial]">Links</h2>
+          <h2 className="text-4xl font-semibold font-[system-ui]">Links</h2>
           <ul className="flex items-start flex-wrap gap-x-4">
             {protfolioLinks.map((link) => {
               return (
@@ -131,9 +140,8 @@ const TypingAnimation = () => {
           </ul>
         </div>
       </div>
-      <Modal />
     </div>
   );
 };
 
-export default TypingAnimation;
+export default Protfolio;
