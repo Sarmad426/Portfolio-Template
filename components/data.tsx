@@ -27,6 +27,8 @@ export type projectObj = {
   name: string;
   description: string;
   url: string;
+  pages: string[];
+  features: string[];
 };
 
 type profileLinks = {
@@ -122,26 +124,71 @@ export const education = {
 export const projects: projectObj[] = [
   {
     name: "Ecommerce App",
-    description:
-      "Mini Amazon Ecommerce App built on top of React and Sass. Add to cart functionality. Products Preview Page. Proceed to checkout form.",
+    description: "Mini Amazon Ecommerce App built on top of React and Sass.",
     url: "https://progressivesite.netlify.app/",
+    pages: [
+      "Home Page",
+      "About Page",
+      "Products Page",
+      "Product Preview Page",
+      "Login and Sign-up Forms page",
+      "Cart and Wishlist Page",
+      "Payments Form Page",
+      "Shipping Page",
+      "Help Page",
+    ],
+    features: [
+      "Login and Sign-up",
+      "Add to Cart",
+      "Add to Wishlist",
+      "Track Order",
+      "Proceed to checkout",
+      "Full form validation",
+    ],
   },
   {
     name: "Ecommerce Hackathon",
     description:
-      "Hackthon UI for hackathon. Built with Next js, Typescript, Tailwind CSS. Fully Responsive. Products Preview Page. Proceed to checkout form. About page.",
+      "Hackthon UI for hackathon. Built with Next js, Typescript, Tailwind CSS.",
     url: "https://hackathon-1-xi.vercel.app/",
+    pages: [
+      "Home Page",
+      "Product Category Pages",
+      "Product Preview Page",
+      "Cart Page",
+      "Checkout Page",
+    ],
+    features: [
+      "Fully Responsive UI across all devices",
+      "Product Quantity control",
+      "Full Form Validation",
+      "Proceed to checkout",
+    ],
   },
   {
     name: "Car Show Case UI",
     description:
-      "Car Show case ui. Built With Next js, Typescript, Tailwind CSS. Full Responsive UI. Popup Modals for Credentials and Item Preview.",
+      "Car Show case ui. Built With Next js, Typescript, Tailwind CSS.",
     url: "https://car-show-case-web.vercel.app/",
+    pages: ["Single Page App"],
+    features: [
+      "Fully Responsive UI across all devices",
+      "Fully Functional Authentication Modals",
+      "Search Bar with suggestions",
+      "Car Preview Modals",
+      "Car Preview Image Gallery",
+    ],
   },
   {
     name: "Counter App",
     description:
       "Simple Counter app. Built With Next js, Typescript, Tailwind CSS.",
     url: "https://nextjs-counter-app-one.vercel.app/",
+    pages: ["Single Page App"],
+    features: [
+      "Simple Counter App",
+      "Functional Navbar tracks counter length",
+      "Complete CRUD operations",
+    ],
   },
 ];
