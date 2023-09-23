@@ -14,6 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="jpg" href="https://i.ibb.co/pnxjDBH/logo.jpg" />
+      </head>
       <body className="font-[ubuntu]">
         <Navbar />
         {children}
