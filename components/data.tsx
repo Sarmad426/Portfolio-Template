@@ -41,6 +41,7 @@ export const personalData = [
     name: "Muhammad Sarmad",
     age: 19,
     image: sarmadImage,
+    about: "Empowering Apps with Generative AI.",
   },
 ];
 export const bio = [

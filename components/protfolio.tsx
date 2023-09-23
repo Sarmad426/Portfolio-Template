@@ -40,6 +40,12 @@ const Protfolio = () => {
                   <p>
                     Age: <span className="font-medium">{data.age}</span>
                   </p>
+                  <p>
+                    About:{" "}
+                    <span className="font-medium text-sm text-gray-600">
+                      {data.about}
+                    </span>
+                  </p>
                 </div>
               );
             })}
