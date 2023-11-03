@@ -47,7 +47,7 @@ export const personalData = [
 export const bio = [
   {
     role: "Full Stack Web Developer",
-    bio: "Hi, I'm Sarmad, a JAM Stack developer with cutting-edge technologies like Next.js, React, TypeScript, Tailwind CSS, Prisma, and Serverless MySQL databases. Interested in BlockChain and Generative AI.",
+    bio: "Hi, I'm Sarmad, a JAM Stack developer with cutting-edge technologies like Next.js, React, TypeScript, Tailwind CSS, Prisma, and Serverless MySQL databases. Empowering apps with Generative AI.",
   },
 ];
 export const skills: skillObj[] = [
