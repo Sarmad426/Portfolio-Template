@@ -98,16 +98,16 @@ const Protfolio = () => {
         {/* Projects */}
         <div className="mb-6 lg:mb-0" id="projects">
           <h2 className="text-4xl font-semibold font-[system-ui]">Projects</h2>
-          <div className="flex items-center justify-start space-x-5 flex-wrap">
+          <div className="flex items-center flex-grow-0 justify-center md:justify-start gap-x-5 flex-wrap w-full">
             {projects.map((project, id) => {
               return (
                 <div
                   key={project.url}
-                  className="lg:flex lg:flex-col shadow-md rounded-md my-4 cursor-pointer min-w-[17rem] max-w-[17.2rem]"
+                  className="lg:flex lg:flex-col shadow-md rounded-md my-4 cursor-pointer min-w-[17rem] max-w-[17.2rem] hover:shadow-sm transition-all duration-500"
                 >
                   <div
                     onClick={() => openModal(id)}
-                    className="flex item-center gap-x-5 px-4 py-3"
+                    className="flex items-center justify-between gap-x-5 px-4 py-3 flex-wrap"
                   >
                     <h3 className="text-lg font-semibold">{project.name}</h3>
                     <BiArrowFromLeft className="w-6 h-7 shrink-0" />
