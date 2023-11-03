@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="jpg" href="https://i.ibb.co/pnxjDBH/logo.jpg" />
+        <link rel="icon" type="jpg" href="logo.jpg" />
       </head>
       <body className="font-[ubuntu]">
         <Navbar />
@@ -24,3 +24,7 @@ export default function RootLayout({
     </html>
   );
 }
+/*
+Remote url of the icon
+ https://i.ibb.co/pnxjDBH/logo.jpg
+*/
