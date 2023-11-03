@@ -192,4 +192,24 @@ export const projects: projectObj[] = [
       "Complete CRUD operations",
     ],
   },
+  {
+    name: "Full Stack Hackathon",
+    description: "Full Stack E-commerce App built with Next.js and Sanity.io",
+    url: "https://next-sanity-ecommerce-gold.vercel.app",
+    pages: [
+      "Home Page",
+      "Products Page",
+      "Individual category pages",
+      "Product Details Page",
+      "Authentication pages",
+    ],
+    features: [
+      "Fully Responsive across all devices",
+      "Fully Authenticated",
+      "Search and Filtering",
+      "Cart Functionalities",
+      "Order Summary",
+      "Related Products Section",
+    ],
+  },
 ];
