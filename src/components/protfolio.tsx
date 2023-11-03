@@ -9,8 +9,9 @@ import {
   contact,
   protfolioLinks,
 } from "./data";
-import { BiArrowFromLeft } from "react-icons/bi";
+
 import Modal from "./modal";
+import { BiChevronRight } from "react-icons/bi";
 const Protfolio = () => {
   const openModal = (id: number) => {
     const modal = document.getElementById(`${id}`);
@@ -110,7 +111,7 @@ const Protfolio = () => {
                     className="flex items-center justify-between gap-x-5 px-4 py-3 flex-wrap"
                   >
                     <h3 className="text-lg font-semibold">{project.name}</h3>
-                    <BiArrowFromLeft className="w-6 h-7 shrink-0" />
+                    <BiChevronRight className="w-6 h-7 shrink-0" />
                   </div>
                   <Modal projectData={project} id={id} />
                 </div>
