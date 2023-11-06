@@ -33,7 +33,7 @@ const Protfolio = () => {
                   <Image
                     src={data.image}
                     alt={`${data.name}, "Image"`}
-                    className="object-cover rounded-full lg:w-4/5 md:w-3/4 flex-shrink-0 w-screen"
+                    className="aspect-square object-center rounded-[100%] lg:w-[400px] lg:h-[400px] md:w-2/4 flex-shrink-0 w-screen my-6"
                   />
                   <h3 className="md:text-4xl text-2xl font-medium">
                     {data.name}
