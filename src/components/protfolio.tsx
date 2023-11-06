@@ -23,7 +23,7 @@ const Protfolio = () => {
   return (
     <div className="h-screen w-screen text-black">
       {/* Home */}
-      <div className="lg:flex lg:flex-row lg:items-start md:items-center md:justify-center md:flex md:flex-col sm:flex sm:flex-col sm:justify-center sm:items-center justify-center items-center space-x-12 m-8 mt-12">
+      <div className="lg:flex lg:flex-row lg:items-start md:items-center md:justify-center md:flex md:flex-col sm:flex sm:flex-col sm:justify-center sm:items-center justify-center items-center space-x-12 m-8 mt-12 gap-y-12">
         {/* Personal Details */}
         <div className="lg:w-2/5 md:w-[80%] sm:w-3/4 w-full">
           <div>
@@ -33,7 +33,7 @@ const Protfolio = () => {
                   <Image
                     src={data.image}
                     alt={`${data.name}, "Image"`}
-                    className="aspect-square object-center rounded-[100%] lg:w-[400px] lg:h-[400px] md:w-2/4 flex-shrink-0 w-screen my-6"
+                    className="aspect-square object-center rounded-[100%] lg:w-4/5 md:w-2/4 flex-shrink-0 w-screen my-6"
                   />
                   <h3 className="md:text-4xl text-2xl font-medium">
                     {data.name}
@@ -58,7 +58,7 @@ const Protfolio = () => {
             {bio.map((data) => {
               return (
                 <div key={data.role}>
-                  <h1 className="text-6xl font-medium text-orange-500">
+                  <h1 className="text-6xl font-medium text-orange-500 my-6">
                     {data.role}
                   </h1>
                   <p className="text-gray-700 text-lg my-8">{data.bio}</p>
