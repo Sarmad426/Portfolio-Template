@@ -16,7 +16,7 @@ import {
 } from "react-icons/si";
 import { FaGraduationCap } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
-import sarmadImage from "./Profile photo.jpg";
+import sarmadImage from "./sarmad-pic-croped.jpg";
 
 type skillObj = {
   logo: JSX.Element;
