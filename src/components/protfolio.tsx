@@ -1,5 +1,8 @@
 "use client";
 import Image from "next/image";
+import { BiChevronRight } from "react-icons/bi";
+import Modal from "./modal";
+import Mail from "@/components/mail";
 import {
   skills,
   personalData,
@@ -10,8 +13,6 @@ import {
   protfolioLinks,
 } from "./data";
 
-import Modal from "./modal";
-import { BiChevronRight } from "react-icons/bi";
 const Protfolio = () => {
   const openModal = (id: number) => {
     const modal = document.getElementById(`${id}`);
@@ -126,9 +127,7 @@ const Protfolio = () => {
           <h2 className="text-4xl font-semibold font-[system-ui]">Contact</h2>
           <div className="flex items-start flex-wrap gap-x-4 my-6">
             <span>{contact.logo}</span>
-            <p className="text-blue-400 underline cursor-pointer">
-              {contact.email}
-            </p>
+            <Mail email={contact.email} />
           </div>
         </div>
         <div className="my-4" id="links">
