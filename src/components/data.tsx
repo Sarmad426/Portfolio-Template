@@ -190,6 +190,7 @@ export const projects: projectObj[] = [
       "Add a Todo",
       "Mark todo as completed",
       "Delete a todo",
+      "Responsive UI",
       "Beautiful Toast Notifications",
       "Separate Pending and Completed Todos Section",
     ],
