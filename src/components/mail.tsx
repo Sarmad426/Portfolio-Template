@@ -7,7 +7,11 @@ const Mail = ({ email }: { email: string }) => {
 
   return (
     <div>
-      <a href={`mailto:${email}`} onClick={handleEmailClick}>
+      <a
+        href={`mailto:${email}`}
+        onClick={handleEmailClick}
+        className="underline text-blue-500"
+      >
         {email}
       </a>
     </div>
