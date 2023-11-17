@@ -181,15 +181,17 @@ export const projects: projectObj[] = [
     ],
   },
   {
-    name: "Counter App",
+    name: "Todo List App",
     description:
-      "Simple Counter app. Built With Next js, Typescript, Tailwind CSS.",
-    url: "https://nextjs-counter-app-one.vercel.app/",
-    pages: ["Single Page App"],
+      "Simple Todo List app. Built With Next js, Typescript, Tailwind CSS and neon (Serverless Postgresql).",
+    url: "https://next-server-actions-todo-app-jade.vercel.app/",
+    pages: ["Form page to create new todos", "Page to view todos"],
     features: [
-      "Simple Counter App",
-      "Functional Navbar tracks counter length",
-      "Complete CRUD operations",
+      "Add a Todo",
+      "Mark todo as completed",
+      "Delete a todo",
+      "Beautiful Toast Notifications",
+      "Separate Pending and Completed Todos Section",
     ],
   },
   {
