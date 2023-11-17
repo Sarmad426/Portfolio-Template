@@ -17,6 +17,7 @@ import {
 import { FaGraduationCap } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
 import sarmadImage from "./sarmad-pic-croped.jpg";
+import { calculateAge } from "@/utils/utils";
 
 type skillObj = {
   logo: JSX.Element;
@@ -36,10 +37,16 @@ type profileLinks = {
   url: string;
   logo: JSX.Element;
 };
+
+const birthYear = 2004;
+const birthMonth = 6;
+const birthDate = 4;
+const age = calculateAge(birthYear, birthMonth, birthDate);
+
 export const personalData = [
   {
     name: "Muhammad Sarmad",
-    age: 19,
+    age,
     image: sarmadImage,
     about: "Empowering Apps with Generative AI.",
   },
