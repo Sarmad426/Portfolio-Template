@@ -3,8 +3,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Sarmad Protoflio",
-  description:
-    "Full Stack Next Js Developer. Interested in Blockchain and Generative AI.",
+  description: "Sarmad Rafique Protfolio. JAM Stack Developer",
 };
 
 export default function RootLayout({
