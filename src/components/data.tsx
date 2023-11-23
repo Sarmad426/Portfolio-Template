@@ -222,4 +222,11 @@ export const projects: projectObj[] = [
       "Related Products Section",
     ],
   },
+  {
+    name: "Image Search App",
+    description: "React Image Search app with live Unsplash api.",
+    url: "https://progressive-image-search-app.netlify.app/",
+    pages: ["Single Page Application"],
+    features: ["Image Search App", "Live Unsplash API", "Live Images"],
+  },
 ];
