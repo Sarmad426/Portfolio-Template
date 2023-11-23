@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Sarmad Protoflio",
-  description: "Sarmad Rafique Protfolio. JAM Stack Developer",
+  description: "Sarmad Rafique. JAM Stack Developer",
 };
 
 export default function RootLayout({
