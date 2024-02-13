@@ -119,7 +119,7 @@ export const protfolioLinks: profileLinks[] = [
     url: "https://www.linkedin.com/in/sarmad-rafique-62518a22b",
   },
   {
-    name: "X - (Twitter)",
+    name: "X",
     logo: <SiX />,
     url: "https://twitter.com/SarmadRafique2",
   },
