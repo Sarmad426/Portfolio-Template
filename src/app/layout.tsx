@@ -2,7 +2,7 @@ import Navbar from "../components/navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "Sarmad Portoflio",
+  title: "Sarmad Rafique Portfolio",
   description: "Sarmad Rafique. JAM Stack Developer",
 };
 

@@ -13,7 +13,7 @@ import {
   protfolioLinks,
 } from "./data";
 
-const Protfolio = () => {
+const Portfolio = () => {
   const openModal = (id: number) => {
     const modal = document.getElementById(`${id}`);
     if (modal) {
@@ -153,4 +153,4 @@ const Protfolio = () => {
   );
 };
 
-export default Protfolio;
+export default Portfolio;
