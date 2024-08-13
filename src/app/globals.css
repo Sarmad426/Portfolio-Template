@@ -2,3 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+} */
+
+:root {
+  --primary-color: #121212;
+  --secondary-color: #222;
+  --secondary-text-color: #555;
+  --dark-primary-color: #fdfdfd;
+  --dark-secondary-color: #f7f7f7;
+  --dark-secondary-text-color: #a8a8a8;
+}
