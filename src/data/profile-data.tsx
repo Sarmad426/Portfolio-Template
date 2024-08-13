@@ -16,7 +16,7 @@ import {
 } from "react-icons/si";
 import { FaGraduationCap } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
-import sarmadImage from "./sarmad-pic-croped.jpg";
+import sarmadImage from "../../public/sarmad-pic-croped.jpg";
 import { calculateAge } from "@/utils/utils";
 
 type skillObj = {

@@ -26,7 +26,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="lg:flex lg:w-2/3 lg:mx-auto md:flex hidden items-center justify-center space-x-16 bg-gray-100 py-3 text-lg font-bold pt-6">
+    <nav className="lg:flex lg:w-2/3 lg:mx-auto md:flex hidden items-center justify-center space-x-16 bg-gray-100 dark:bg-secondaryColor dark:text-white py-3 text-lg font-bold pt-6">
       {links.map((link) => {
         return (
           <a
