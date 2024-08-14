@@ -31,11 +31,13 @@ const Portfolio = () => {
             {personalData.map((data) => {
               return (
                 <div key={data.name}>
-                  <Image
-                    src={data.image}
-                    alt={`${data.name}, "Image"`}
-                    className="aspect-square object-center rounded-[100%] lg:w-4/5 md:w-2/4 flex-shrink-0 w-screen my-6"
-                  />
+                  <div className="border-t border-t-teal-400 border-b-indigo-400 border-b rounded-[100%] flex items-center justify-center">
+                    <Image
+                      src={data.image}
+                      alt={`${data.name}, "Image"`}
+                      className="aspect-square object-center rounded-[100%] lg:w-4/5 md:w-2/4 flex-shrink-0 w-screen my-6"
+                    />
+                  </div>
                   <h3 className="md:text-4xl text-2xl font-medium">
                     {data.name}
                   </h3>
