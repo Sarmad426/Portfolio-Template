@@ -2,6 +2,7 @@
 
 import React, { Dispatch, SetStateAction, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const links = [
   {
@@ -28,7 +29,7 @@ const links = [
 
 export const Navbar = () => {
   return (
-    <div className="">
+    <div className="hidden sm:flex">
       <SlideTabs />
     </div>
   );
@@ -51,14 +52,9 @@ const SlideTabs = () => {
       }}
       className="relative mx-auto flex w-fit rounded-full border-2 border-black bg-white p-1"
     >
-      {/* <Tab setPosition={setPosition}>Home</Tab>
-      <Tab setPosition={setPosition}>Pricing</Tab>
-      <Tab setPosition={setPosition}>Features</Tab>
-      <Tab setPosition={setPosition}>Docs</Tab>
-      <Tab setPosition={setPosition}>Blog</Tab> */}
       {links.map((link) => (
         <Tab key={link.url} setPosition={setPosition}>
-          {link.label}
+          <Link href={link.url}>{link.label}</Link>
         </Tab>
       ))}
       <Cursor position={position} />
@@ -70,7 +66,7 @@ const Tab = ({
   children,
   setPosition,
 }: {
-  children: string;
+  children: React.ReactNode;
   setPosition: Dispatch<SetStateAction<Position>>;
 }) => {
   const ref = useRef<null | HTMLLIElement>(null);
