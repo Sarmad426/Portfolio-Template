@@ -11,7 +11,7 @@ export const PersonalDetails = () => {
               <Image
                 src={data.image}
                 alt={`${data.name}, "Image"`}
-                className="aspect-square object-center rounded-[100%] lg:w-4/5 md:w-2/4 flex-shrink-0 w-screen my-6"
+                className="aspect-square object-center rounded-[100%] flex-shrink-0 w-screen my-6 mx-20"
               />
             </div>
             <h3 className="md:text-4xl text-2xl font-medium">{data.name}</h3>
