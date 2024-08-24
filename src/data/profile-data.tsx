@@ -48,13 +48,13 @@ export const personalData = [
     name: "Muhammad Sarmad",
     age,
     image: sarmadImage,
-    about: "Empowering Apps with Generative AI.",
+    about: "Full Stack Engineer. Cloud and Generative AI Enthusiast.",
   },
 ];
 export const bio = [
   {
-    role: "Full Stack Web Developer",
-    bio: "Hi, I'm Sarmad, a JAM Stack developer. I have expertise in cutting-edge technologies like Next.js, React, TypeScript, Tailwind CSS, Prisma, and Serverless MySQL databases. Empowering apps with Generative AI.",
+    role: "Full Stack Engineer",
+    bio: "Hi, I'm Sarmad. I am a Full stack developer having expertise in cutting-edge technologies like MERN stack, Next js, Fast API and Serverless PostgreSQL databases. Empowering Apps with Generative AI and Microservices architecture.",
   },
 ];
 export const skills: skillObj[] = [
