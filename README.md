@@ -1,8 +1,17 @@
 # Portfolio Template
 
-Portfolio web app built with **Next js**, **Typescript**, **Tailwind Css** and **Framer Motion**.
+Portfolio web app built with the powerful stack. **Next js**, **Typescript**, **Tailwind Css** and **Framer Motion**.
 
-Customize it, Update the [profile-data.tsx](src/data/profile-data.tsx) file and make the portfolio template yours.
+## Tech Stack
+
+- Typescript
+- Next js
+- Tailwind CSS
+- Framer Motion
+
+This repository is a public template.
+
+Update the [profile-data.tsx](src/data/profile-data.tsx) file and make the portfolio template yours.
 
 ## Desktop View
 
