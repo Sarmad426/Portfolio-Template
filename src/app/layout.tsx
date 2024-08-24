@@ -1,5 +1,6 @@
-import Navbar from "../components/navbar";
 import "./globals.css";
+
+import { Navbar } from "@/components/navbar";
 
 export const metadata = {
   title: "Sarmad Rafique Portfolio",
@@ -23,7 +24,3 @@ export default function RootLayout({
     </html>
   );
 }
-/*
-Remote url of the icon
- https://i.ibb.co/pnxjDBH/logo.jpg
-*/
