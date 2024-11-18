@@ -54,7 +54,7 @@ export const personalData = [
 export const bio = [
   {
     role: "Full Stack Engineer",
-    bio: "Hi, I'm Sarmad. I am a Full stack developer having expertise in cutting-edge technologies like MERN stack, Next js, Fast API and Serverless PostgreSQL databases. Empowering Apps with Generative AI and Microservices architecture.",
+    bio: "Hi I am Sarmad, a Full Stack Web and Generative AI Engineer passionate about building SEO-friendly, AI-powered microservices architecture applications. My primary tech stack includes the MERN stack, Next.js, and FastAPI. I use Docker to create production-ready, cloud-native applications. I specialize in integrating Generative AI to develop chatbots, custom GPT models, automate tasks with GPT-powered actions, fine-tune LLMs, and more.",
   },
 ];
 export const skills: skillObj[] = [
