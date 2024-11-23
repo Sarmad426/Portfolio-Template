@@ -17,7 +17,7 @@ import {
 import { FaGraduationCap } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
 import sarmadImage from "../../public/profile-photo.png";
-import { calculateAge } from "@/utils/utils";
+// import { calculateAge } from "@/utils/utils";
 
 type skillObj = {
   logo: JSX.Element;
@@ -41,12 +41,12 @@ type profileLinks = {
 const birthYear = 2004;
 const birthMonth = 6;
 const birthDate = 4;
-const age = calculateAge(birthYear, birthMonth, birthDate);
+// const age = calculateAge(birthYear, birthMonth, birthDate);
 
 export const personalData = [
   {
     name: "Muhammad Sarmad",
-    age,
+    // age,
     image: sarmadImage,
     about: "Full Stack Engineer. Cloud and Generative AI Enthusiast.",
   },

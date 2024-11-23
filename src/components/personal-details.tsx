@@ -15,9 +15,7 @@ export const PersonalDetails = () => {
               />
             </div>
             <h3 className="md:text-4xl text-2xl font-medium">{data.name}</h3>
-            <p>
-              <span className="font-medium">{data.age}</span>
-            </p>
+            <p>{/* <span className="font-medium">{data.age}</span> */}</p>
             <p>
               <span className="font-medium text-sm text-gray-600 dark:text-darkSecondaryColor">
                 {data.about}
