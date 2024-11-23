@@ -20,7 +20,7 @@ const Modal: React.FC<Project> = ({ projectData, id }) => {
   return (
     <dialog
       id={`${id}`}
-      className="dark:bg-primaryColor dark:text-darkPrimaryColor border-0 outline-0 rounded-md lg:w-2/5 md:w-2/3 sm:w-5/6 w-full cursor-default"
+      className="m-auto dark:bg-primaryColor dark:text-darkPrimaryColor border-0 outline-0 rounded-md lg:w-2/5 md:w-2/3 sm:w-5/6 w-full cursor-default"
     >
       <div className="px-6 py-8 relative">
         <button className="absolute right-3 top-0 outline-none shadow-md hover:shadow-sm rounded-full p-2 transition-colors duration-500">

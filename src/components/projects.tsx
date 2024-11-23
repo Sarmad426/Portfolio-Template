@@ -12,7 +12,7 @@ export const Projects = () => {
     }
   };
   return (
-    <div className="mb-6 lg:mb-0" id="projects">
+    <div className="mb-6 lg:mb-0" id="projects w-full h-full">
       <h2 className="text-4xl font-semibold font-[system-ui]">Projects</h2>
       <div className="flex items-center flex-grow-0 justify-center md:justify-start gap-x-5 flex-wrap w-full">
         {projects.map((project, id) => {
