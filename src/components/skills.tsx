@@ -9,7 +9,7 @@ export const Skills = () => {
           return (
             <li
               key={skill.name}
-              className="shadow-md dark:shadow-darkSecondaryColor px-2 md:px-3 lg:px-5 py-4 text-base flex my-4 rounded-md gap-x-3"
+              className="shadow-md dark:shadow-darkSecondaryColor px-2 md:px-3 lg:px-5 py-4 text-base flex items-center my-4 rounded-md gap-x-3"
             >
               <span>{skill.logo}</span>
               <p>{skill.name}</p>
