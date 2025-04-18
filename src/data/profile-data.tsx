@@ -13,6 +13,10 @@ import {
   SiGithub,
   SiLinkedin,
   SiX,
+  SiBootstrap,
+  SiJavascript,
+  SiPostgresql,
+  SiMongodb,
 } from "react-icons/si";
 import { FaGraduationCap } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
@@ -71,6 +75,14 @@ export const skills: skillObj[] = [
     name: "Tailwind CSS",
   },
   {
+    logo: <SiBootstrap />,
+    name: "Bootstrap",
+  },
+  {
+    logo: <SiJavascript />,
+    name: "Javascript",
+  },
+  {
     logo: <SiTypescript />,
     name: "Typescript",
   },
@@ -89,6 +101,14 @@ export const skills: skillObj[] = [
   {
     logo: <SiMysql />,
     name: "MYSQL",
+  },
+  {
+    logo: <SiPostgresql />,
+    name: "PostgreSQL",
+  },
+  {
+    logo: <SiMongodb />,
+    name: "MongoDB",
   },
   {
     logo: <SiGit />,
