@@ -14,13 +14,18 @@ import {
   SiLinkedin,
   SiX,
   SiBootstrap,
-  SiJavascript,
   SiPostgresql,
   SiMongodb,
+  SiDocker,
+  SiDrizzle,
+  SiFastapi,
+  SiExpress,
+  SiNodedotjs,
 } from "react-icons/si";
 import { FaGraduationCap } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
 import sarmadImage from "../../public/profile-photo.png";
+import { JSX } from "react";
 // import { calculateAge } from "@/utils/utils";
 
 type skillObj = {
@@ -63,6 +68,10 @@ export const bio = [
 ];
 export const skills: skillObj[] = [
   {
+    logo: <SiFigma />,
+    name: "Figma UI/UX",
+  },
+  {
     logo: <SiHtml5 />,
     name: "HTML",
   },
@@ -79,10 +88,6 @@ export const skills: skillObj[] = [
     name: "Bootstrap",
   },
   {
-    logo: <SiJavascript />,
-    name: "Javascript",
-  },
-  {
     logo: <SiTypescript />,
     name: "Typescript",
   },
@@ -91,12 +96,24 @@ export const skills: skillObj[] = [
     name: "React Js",
   },
   {
+    logo: <SiExpress />,
+    name: "Express Js",
+  },
+  {
+    logo: <SiNodedotjs />,
+    name: "Node Js",
+  },
+  {
     logo: <SiNextdotjs />,
     name: "Next Js",
   },
   {
     logo: <SiPrisma />,
-    name: "Prisma",
+    name: "Prisma ORM",
+  },
+  {
+    logo: <SiDrizzle />,
+    name: "Drizzle ORM",
   },
   {
     logo: <SiMysql />,
@@ -115,12 +132,16 @@ export const skills: skillObj[] = [
     name: "Git",
   },
   {
-    logo: <SiFigma />,
-    name: "Figma UI/UX",
-  },
-  {
     logo: <SiPython />,
     name: "Python",
+  },
+  {
+    logo: <SiFastapi />,
+    name: "FastAPI",
+  },
+  {
+    logo: <SiDocker />,
+    name: "Docker",
   },
 ];
 export const contact = {
