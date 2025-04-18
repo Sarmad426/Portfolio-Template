@@ -107,7 +107,7 @@ export const contact = {
   email: "sarmadrafique040@gmail.com",
   logo: <BiMailSend />,
 };
-export const protfolioLinks: profileLinks[] = [
+export const portfolioLinks: profileLinks[] = [
   {
     name: "Github",
     logo: <SiGithub />,
