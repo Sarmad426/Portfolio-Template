@@ -1,4 +1,4 @@
-import { contact, protfolioLinks } from "@/data/profile-data";
+import { contact, portfolioLinks } from "@/data/profile-data";
 import Mail from "./mail";
 
 export const ContactInfo = () => {
@@ -14,7 +14,7 @@ export const ContactInfo = () => {
       <div className="my-4" id="links">
         <h2 className="text-4xl font-semibold font-[system-ui]">Links</h2>
         <div className="flex items-start flex-wrap gap-x-4">
-          {protfolioLinks.map((link) => {
+          {portfolioLinks.map((link) => {
             return (
               <a
                 key={link.name}
